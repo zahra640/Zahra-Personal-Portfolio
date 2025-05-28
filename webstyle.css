@@ -1,0 +1,312 @@
+body {
+    background-color: #222; /* Dark Background */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation */
+header {
+    background: #222;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #aac8ff;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #aac8ff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo a:hover{
+    color: #ccc; /* change color */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #aac8ff; /* Highlight color */
+}
+
+/* main Section */
+.main {
+    display: flex;
+    height: 90vh;
+}
+
+.left {
+    text-align: center;
+    width: 70%;
+/*    display: flex;*/
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+
+.left h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    margin: 8%;
+}
+
+.left span {
+    color: #aac8ff; /* diff color */
+
+}
+
+.left p {
+    font-size: 20px;
+    color: #ccc;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Spacing between buttons */
+    margin-top: 4%;
+}
+
+.button {
+    padding: 12px 25px;
+    font-size: 20 px;
+    font-weight: 600;
+    color: #fff;
+    background: #2A2A2A;
+    border: 2px solid #4A4A4A;
+    border-radius: 8px; /* Rounded edges */
+    text-decoration: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+    background: #aac8ff; /* Light blue on hover */
+    border-color: #aac8ff;
+    color: #222;
+}
+
+
+.right {
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding: 50px;
+}
+
+.right img {
+    width: 80%;
+    border-radius: 50%;
+    border: 5px solid #aac8ff;
+    object-fit: cover;
+}
+
+
+/* about section */
+.about{
+    max-width: 900px;
+    margin:  auto;
+    padding: 20px;
+    text-align: left;
+
+}
+
+.about h2 {
+    text-transform: uppercase;
+    border-bottom: 3px solid #aac8ff;
+    display: inline-block;
+    font-size: 28px;
+    padding: 10px;
+    color: #fff;
+}
+
+.about img {
+    width: 30%;
+    border-radius: 20px;
+    float: left;
+    padding: 10px;
+    margin-right: 10px;
+
+}
+
+.about p {
+    color: #ccc;
+    font-size: 18px;
+    line-height: 1.5;
+    text-wrap: pretty;
+}
+
+/* boxes layout for interests */
+.interest-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    max-width: 900px;
+}
+
+.interest-item {
+    border-radius: 8px;
+    background: #2A2A2A;
+    border: 2px solid #4A4A4A;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ccc;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+/* intro for projects and experiences pages */
+.intro {
+    max-width: 1000px;
+    margin:  auto;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 36px;
+    color: #fff;
+    border-bottom: 3px solid #aac8ff;
+    display: inline-block;
+    padding: 10px;
+}
+
+.intro p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #ccc;
+}
+
+
+
+.intro ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Spacing between buttons */
+}
+
+.intro ul li{
+    list-style: none;
+    padding: 12px 25px;
+    font-size: 20 px;
+    font-weight: 600;
+    color: #ccc;
+    background: #2A2A2A;
+    border: 2px solid #4A4A4A;
+    border-radius: 8px; /* Rounded edges */
+    text-decoration: none;
+}
+
+/* box layout for projects and experiences pages */
+.projects{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1500px;
+    gap: 30px;
+    margin: auto;
+    padding: 20px;
+}
+
+.project{
+    background: #2A2A2A;
+    border: 2px solid #4A4A4A;
+    padding: 20px;
+    width: 60%;
+    border-radius: 8px;
+}
+
+.project h2{
+    color: #fff;
+    border-bottom: 3px solid #aac8ff;
+    display: inline-block;
+    padding: 10px;
+}
+
+.project h3{
+    color: #fff;
+    border-bottom: 3px solid #aac8ff;
+    display: inline-block;
+    padding: 10px;
+}
+
+.project p {
+    display: flex;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ccc;
+    text-wrap: wrap;
+}
+
+.project ul {
+    font-size: 16px;
+    color: #ccc;
+    padding-left: 20px;
+}
+
+.project ul li{
+    padding: 5px ;
+}
+
+.project img{
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+    width: 30%;
+    align: right;
+}
+
+
+
+
+/* Footer */
+footer {
+    text-align: left;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background: #111;
+    color: #ccc;
+}
+
+
+
